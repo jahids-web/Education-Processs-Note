@@ -1,0 +1,37 @@
+1. Frist I Create A Api Project.
+
+2. Create Some Controller = DepartmentController,StudentController, CourseController.
+
+3. Add Some Nuget Packag in API Project = 
+*Microsoft.EntityFrameworkCore, 
+*Microsoft.EntityFremeworkCoreSqlServer, 
+*Microsoft.EntityFremeworkCore.Tool, 
+*Microsoft.EntityFremeworkCore.Design, 
+*FlientValidation.AspNetCore.
+
+4.Setap Swagger in Startup.cs, And Add Packge Swashbuckle.AspNetCore
+
+5.API Versioning Add Microsoft.AspNetCore.Mvc.Versioning Packge.[Route("api/v{version:apiVersion}/[controller]")]
+
+6. Create New Class Laibery Projet DLL Is Mine Data logic layer.
+
+7. Create DLLDependency.cs Class Add UseSqlServer Configuration.
+
+8. Add Migration in DLL Project dotnet ef migrations add ApiMigration --project "DLL" --startup-project "API"
+
+dotnet ef database update --project "DLL" --startup-project "University-Api"
+
+9.Add Reposatory Partern IDepartmentReposatory and implement DepartmentController,
+ And Add Add Reposatory Partern IStudentReposatory and implement StudentController.
+
+10. Implemant Service Repository Pattern = Api=> BLL(service) => DLL(repository) => DB.
+
+11. Add New Project BLL.
+
+12. Implement All Service Repository Partern.
+
+13.Add AddFluentValidation;
+
+14. Create Request Folder And add Validator.
+
+15. Add Custom Middleware
