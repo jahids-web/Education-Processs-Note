@@ -3,13 +3,11 @@
 2. Create Some Controller = DepartmentController,StudentController, CourseController.
 
 3. Add Some Nuget Packag in API Project = 
-*Microsoft.EntityFrameworkCore, 
+4.*Microsoft.EntityFrameworkCore, 
 *Microsoft.EntityFremeworkCoreSqlServer, 
 *Microsoft.EntityFremeworkCore.Tool, 
 *Microsoft.EntityFremeworkCore.Design, 
 *FlientValidation.AspNetCore.
-
-4.Setap Swagger in Startup.cs, And Add Packge Swashbuckle.AspNetCore
 
 5.API Versioning Add Microsoft.AspNetCore.Mvc.Versioning Packge.[Route("api/v{version:apiVersion}/[controller]")]
 
